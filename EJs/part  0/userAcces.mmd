@@ -1,0 +1,15 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>server: GET (HTML)
+    server-->>browser: HTML code11
+
+    browser->>server: GET (css)
+    server-->>browser: css
+
+    browser->>server: GET (js)
+    server-->>browser: js
+
+    browser->>server: GET (json)
+    server-->>browser: json

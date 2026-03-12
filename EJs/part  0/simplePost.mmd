@@ -1,0 +1,20 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    Note over browser: "Save"
+    browser->>server: POST 
+    server-->>browser: HTTP 302 (Redirect)
+    Note over browser: Reload bc the Redirect
+
+    browser->>server: GET (HTML)
+    server-->>browser: HTML code11
+
+    browser->>server: GET (css)
+    server-->>browser: css
+
+    browser->>server: GET (js)
+    server-->>browser: js
+
+    browser->>server: GET (json)
+    server-->>browser: json   
